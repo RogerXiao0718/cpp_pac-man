@@ -1,0 +1,5 @@
+﻿  ghost.cpp
+D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(13,20): warning C4838: 從 'int' 到 'SHORT' 的轉換必須是縮小轉換
+D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(13,27): warning C4838: 從 'int' 到 'SHORT' 的轉換必須是縮小轉換
+D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(121,13): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+  Project1.vcxproj -> D:\OOP_final_topic\Pac-Man\Debug\Project1.exe

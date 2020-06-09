@@ -139,18 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\cpp_practice\Pec-Man\initApp.cpp" />
-    <ClCompile Include="..\..\..\cpp_practice\Pec-Man\main.cpp" />
+    <ClCompile Include="beanCounter.cpp" />
     <ClCompile Include="ghost.cpp" />
+    <ClCompile Include="initApp.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
+    <ClCompile Include="pacman.cpp" />
     <ClCompile Include="renderer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\cpp_practice\Pec-Man\initApp.h" />
+    <ClInclude Include="beanCounter.h" />
     <ClInclude Include="direction.h" />
     <ClInclude Include="ghost.h" />
+    <ClInclude Include="initApp.h" />
     <ClInclude Include="map.h" />
+    <ClInclude Include="pacman.h" />
     <ClInclude Include="renderer.h" />
+    <ClInclude Include="gameStatus.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="csiemap.txt" />

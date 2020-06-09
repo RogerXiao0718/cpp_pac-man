@@ -6,6 +6,7 @@
 #define MAP_HEIGHT 30
 #define BEAN '.'
 #define WALL '#'
+#define SUPER_BEAN 'o'
 
 extern std::vector<std::vector<char>> map;
 void initMap();

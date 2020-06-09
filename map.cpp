@@ -45,15 +45,17 @@ void initMap() {
     //第13列
     map[12] = { WALL, BEAN, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, BEAN, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, BEAN, WALL };
     //第14列(小精靈的出生點)
-    for (int i = 0; i < 13; i++)
+    map[13].push_back(WALL);
+    for (int i = 1; i < 13; i++)
     {
         map[13].push_back(BEAN);
     }
     map[13].push_back(' ');
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 12; i++)
     {
         map[13].push_back(BEAN);
     }
+    map[13].push_back(WALL);
     //第15列
     map[14] = { WALL, WALL, WALL, WALL, BEAN, BEAN, BEAN, BEAN, WALL, WALL, WALL, WALL, ' ', BEAN, ' ', WALL, WALL, WALL, BEAN, BEAN, BEAN, BEAN, BEAN, BEAN, WALL, WALL, WALL };
     //第16列
@@ -79,11 +81,11 @@ void initMap() {
     //第26列
     map[25] = { WALL, BEAN, WALL, WALL, WALL, WALL, WALL, WALL, WALL, BEAN, BEAN, BEAN, BEAN, BEAN, BEAN, BEAN, BEAN, WALL, WALL, WALL, WALL, WALL, WALL, WALL, WALL, BEAN, WALL };
     //第27列
-    map[26] = { WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL, WALL, WALL, BEAN, WALL, WALL, WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL };
+    map[26] = { WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL, WALL, WALL, ' ', WALL, WALL, WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL };
     //第28列
-    map[27] = { WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL, WALL, WALL, BEAN, WALL, WALL, WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL };
+    map[27] = { WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL, WALL, WALL, ' ', WALL, WALL, WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL };
     //第29列
-    map[28] = { WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL, WALL, WALL, BEAN, WALL, WALL, WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL };
+    map[28] = { WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL, WALL, WALL, WALL, ' ',WALL , WALL, WALL, WALL, ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', WALL };
     //第30列 (我的腰椎...)
     for (int i = 0; i < MAP_WIDTH; i++)
     {

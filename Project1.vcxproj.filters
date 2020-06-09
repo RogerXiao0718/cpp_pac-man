@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\cpp_practice\Pec-Man\main.cpp">
-      <Filter>來源檔案</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\cpp_practice\Pec-Man\initApp.cpp">
-      <Filter>來源檔案</Filter>
-    </ClCompile>
     <ClCompile Include="map.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
@@ -30,21 +24,42 @@
     <ClCompile Include="ghost.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="pacman.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="initApp.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="beanCounter.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\cpp_practice\Pec-Man\initApp.h">
-      <Filter>來源檔案</Filter>
-    </ClInclude>
     <ClInclude Include="ghost.h">
-      <Filter>來源檔案</Filter>
-    </ClInclude>
-    <ClInclude Include="direction.h">
       <Filter>來源檔案</Filter>
     </ClInclude>
     <ClInclude Include="map.h">
       <Filter>來源檔案</Filter>
     </ClInclude>
     <ClInclude Include="renderer.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="pacman.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStatus.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="direction.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="initApp.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="beanCounter.h">
       <Filter>來源檔案</Filter>
     </ClInclude>
   </ItemGroup>

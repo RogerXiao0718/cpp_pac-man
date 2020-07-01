@@ -27,9 +27,12 @@ char Ghost::GetStyle() {
 
 void Ghost::Move() {
 	COORD playerPos = player.GetPos();
-	 int randTick;
+	int randTick;
 	srand(time(NULL));
-	randTick =((int)rand()) % 4;
+	randTick = (int)(rand() % 3);
+	if (randTick == 0) {
+		ChangeDirection();
+	}
 	int pX = playerPos.X;
 	int pY = playerPos.Y;
 		if ((currDirection == DIR_UP && map[currY - 1][currX] == WALL) ||
@@ -45,7 +48,7 @@ void Ghost::Move() {
 			ChangeDirection();
 		}
 
-		if (randTick == 1) {
+		if (randTick == 0) {
 			ChangeDirection();
 		}
 
@@ -125,22 +128,22 @@ void Ghost::Move() {
 void Ghost::ChangeDirection() { //變換移動方向
 	vector<int> directions; //代表所有可以移動的方向
 	long randDirection;
-	if (map[currY - 1][currX] != WALL && map[currY - 1][currX] != GetStyle()) {
+	if (map[currY - 1][currX] != WALL && map[currY - 1][currX] != GetStyle() && currDirection != DIR_UP) {
 		directions.push_back(DIR_UP);
 	}
-	if (map[currY + 1][currX] != WALL && map[currY + 1][currX] != GetStyle()) {
+	if (map[currY + 1][currX] != WALL && map[currY + 1][currX] != GetStyle() && currDirection != DIR_DOWN) {
 		directions.push_back(DIR_DOWN);
 	}
-	if (map[currY][currX - 1] != WALL && map[currY][currX - 1] != GetStyle()) {
+	if (map[currY][currX - 1] != WALL && map[currY][currX - 1] != GetStyle() && currDirection != DIR_LEFT) {
 		directions.push_back(DIR_LEFT);
 	}
-	if (map[currY][currX + 1] != WALL && map[currY][currX + 1] != GetStyle())
+	if (map[currY][currX + 1] != WALL && map[currY][currX + 1] != GetStyle() && currDirection != DIR_RIGHT)
 	{
 		directions.push_back(DIR_RIGHT);
 	}
 	if ((int)directions.size() != 0) {
 		srand(time(NULL));
-		randDirection = rand() % (int)(directions.size()); //用亂數決定方向
+		randDirection = rand() % (directions.size()); //用亂數決定方向
 		currDirection = directions[randDirection];
 	}
 }

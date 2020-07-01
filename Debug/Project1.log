@@ -1,6 +1,4 @@
-﻿  ghost.cpp
-D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(19,20): warning C4838: 從 'int' 到 'SHORT' 的轉換必須是縮小轉換
-D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(19,27): warning C4838: 從 'int' 到 'SHORT' 的轉換必須是縮小轉換
-D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(31,12): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-D:\OOP_final_topic\Pac-Man\Project1\ghost.cpp(142,13): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+﻿  main.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+D:\OOP_final_topic\Pac-Man\Project1\main.cpp(61,27): warning C4018: '<': signed/unsigned 不相符
   Project1.vcxproj -> D:\OOP_final_topic\Pac-Man\Debug\Project1.exe

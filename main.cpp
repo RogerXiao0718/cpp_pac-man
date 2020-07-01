@@ -26,17 +26,18 @@ int main()
     {
         
         updateMap();
-        
+
         if (isLose == true) {
             continue;
         }
-        
+
         if (GetAsyncKeyState(VK_SPACE) != 0) {
-            if (isLose) { 
+            if (isLose) {
                 initApp();
             }
             isLose = false;
         }
+       
         if (GetAsyncKeyState(87) != 0 || GetAsyncKeyState(VK_UP) != 0) //Åª¨úUP¿é¤J
         {
             player.ChangeDirection(DIR_UP);

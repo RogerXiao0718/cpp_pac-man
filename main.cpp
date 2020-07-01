@@ -14,7 +14,10 @@ using namespace std;
 int main()
 {
     initApp();
-    cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t按空白鍵開始!" << endl;
+    cout << "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t按空白鍵開始!\n\n" << endl;
+    cout << "\t\t\t\tWASD 或 上下左右 移動\n" << endl;
+    cout << "\t\t\t\t將場地上的豆子吃光就獲勝\n" << endl;
+    cout << "\t\t\t\t碰到鬼就算輸\n" << endl;
     for (;;) {
         if (GetAsyncKeyState(VK_SPACE) != 0) {
             system("cls");
